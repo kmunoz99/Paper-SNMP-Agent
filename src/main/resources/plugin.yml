@@ -1,0 +1,4 @@
+name: MinecraftSNMP
+version: '1.0'
+main: com.verdeloro.snmpplugin.SNMPPlugin
+api-version: '1.21'

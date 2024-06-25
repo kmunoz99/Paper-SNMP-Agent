@@ -1,0 +1,4 @@
+[11:53:22] [Paper Plugin Remapper Thread - 0/INFO]: [ReobfServer] Remapping server...
+[11:53:25] [ServerMain/WARN]: Failed to load eula.txt
+[11:53:25] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[11:53:26] [Paper Plugin Remapper Thread - 0/INFO]: [ReobfServer] Done remapping server in 3498ms.

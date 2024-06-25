@@ -1,0 +1,64 @@
+[12:53:33] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/Minecraft-SNMP-Plugin-1.0-SNAPSHOT.jar'...
+[12:53:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Minecraft-SNMP-Plugin-1.0-SNAPSHOT.jar' in 576ms.
+[12:53:36] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[12:53:36] [ServerMain/INFO]: Loaded 1290 recipes
+[12:53:36] [ServerMain/INFO]: Loaded 1399 advancements
+[12:53:37] [Server thread/INFO]: Starting minecraft server version 1.21
+[12:53:37] [Server thread/INFO]: Loading properties
+[12:53:37] [Server thread/INFO]: This server is running Paper version 1.21-37-master@dd49fba (2024-06-24T02:08:49Z) (Implementing API version 1.21-R0.1-SNAPSHOT)
+[12:53:37] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:53:37] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:53:38] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[12:53:38] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and population gen parallelism of 2 threads
+[12:53:38] [Server thread/INFO]: Default game type: SURVIVAL
+[12:53:38] [Server thread/INFO]: Generating keypair
+[12:53:38] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:53:38] [Server thread/INFO]: Using default channel type
+[12:53:38] [Server thread/INFO]: Paper: Using libdeflate (macOS ARM64 / Apple Silicon) compression from Velocity.
+[12:53:38] [Server thread/INFO]: Paper: Using native (macOS ARM64 / Apple Silicon) cipher from Velocity.
+[12:53:38] [Server thread/INFO]: [MinecraftSNMP] Loading server plugin MinecraftSNMP v1.0
+[12:53:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:53:38] [Server thread/INFO]: Preparing level "world"
+[12:53:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[12:53:39] [Server thread/INFO]: Time elapsed: 383 ms
+[12:53:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[12:53:39] [Server thread/INFO]: Time elapsed: 52 ms
+[12:53:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[12:53:39] [Server thread/INFO]: Time elapsed: 38 ms
+[12:53:39] [Server thread/INFO]: [MinecraftSNMP] Enabling MinecraftSNMP v1.0
+[12:53:39] [Server thread/INFO]: [MinecraftSNMP] [STDOUT] SNMP agent listening on port 12345
+[12:53:39] [Server thread/WARN]: Nag author(s): '[]' of 'MinecraftSNMP v1.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[12:53:39] [Server thread/INFO]: Running delayed init tasks
+[12:53:39] [Server thread/INFO]: Done (2.313s)! For help, type "help"
+[12:53:39] [Server thread/INFO]: Timings Reset
+[12:53:58] [User Authenticator #0/INFO]: UUID of player lace22 is 9f04834d-1e6c-4289-aa08-94a7db1fd4ce
+[12:53:59] [Server thread/INFO]: lace22 joined the game
+[12:53:59] [Server thread/INFO]: lace22[/127.0.0.1:53885] logged in with entity id 74 at ([world]-32.5, 75.0, -86.5)
+[12:57:25] [Server thread/INFO]: lace22 lost connection: Disconnected
+[12:57:25] [Server thread/INFO]: lace22 left the game
+[14:20:46] [Server thread/INFO]: Stopping the server
+[14:20:46] [Server thread/INFO]: Stopping server
+[14:20:46] [Server thread/INFO]: [MinecraftSNMP] Disabling MinecraftSNMP v1.0
+[14:20:46] [Server thread/INFO]: Saving players
+[14:20:46] [Server thread/INFO]: Saving worlds
+[14:20:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 99 entity chunks, 0 poi chunks in world 'world' in 0.06s
+[14:20:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 1 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[14:20:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[14:20:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.02s
+[14:20:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:20:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:20:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:20:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
