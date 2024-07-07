@@ -1,4 +1,5 @@
-name: MinecraftSNMP
+name: Minecraft-SNMP-Agent
 version: '1.0'
 main: com.verdeloro.snmpplugin.SNMPPlugin
 api-version: '1.21'
+author: 'laceperro'

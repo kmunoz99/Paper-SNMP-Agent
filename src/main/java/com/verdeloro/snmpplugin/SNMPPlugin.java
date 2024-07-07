@@ -1,43 +1,40 @@
 package com.verdeloro.snmpplugin;
 
-import net.kyori.adventure.text.Component;
-import org.bukkit.Bukkit;
-import org.bukkit.event.EventHandler;
+import com.verdeloro.snmpplugin.agent.SNMPAgent;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
 public class SNMPPlugin extends JavaPlugin implements Listener {
+    private SNMPAgent snmpAgent;
+    @Override
+    public void onDisable()
+    {
+        this.snmpAgent.stop();
+
+    }
 
     @Override
     public void onEnable() {
 
-        Bukkit.getPluginManager().registerEvents(this, this);
+        saveDefaultConfig();
+        FileConfiguration config = getConfig();
+
+        int port = config.getInt("port");
+        String community = config.getString("community");
+        String host = config.getString("host");
+        String baseOID = config.getString("oid");
+
+        //Bukkit.getPluginManager().registerEvents(this, this);
         try {
-
-            // create an agent to listen at localhost:12345
-            SNMPAgent snmpAgent = new SNMPAgent("0.0.0.0/12345");
-
-            // actually start listening
+            this.snmpAgent = new SNMPAgent(String.format("%s/%d",host, port), community, baseOID);
             snmpAgent.start();
-
-            // register the custom mib information
             snmpAgent.registerCustomMIB();
 
-            System.out.println("SNMP agent listening on port 12345");
-
-            // just keep running the process
-            // in a regular scenario the agent will be instantiated in a living process
-
         } catch (Exception e) {
-            System.out.println("Failed to start SNMP agent on port 12345 : " + e.getMessage());
+            System.out.println("Failed to start SNMP agent : " + e.getMessage());
         }
-    }
-
-    @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event) {
-        event.getPlayer().sendMessage(Component.text("Hello, " + event.getPlayer().getName() + "!"));
     }
 
 }

@@ -1,0 +1,4 @@
+port: 12345
+community: public
+host: 0.0.0.0
+oid: 1.3.6.1.4.1.12345
